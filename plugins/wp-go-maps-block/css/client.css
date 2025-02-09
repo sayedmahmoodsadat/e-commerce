@@ -1,0 +1,107 @@
+.wpgmza_map_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.wpgmza_map_wrapper .wpgmza_map.wpgmza-auto-center,
+.wpgmza_map_wrapper .wpgmza_map.wpgmza-auto-left{
+    margin-right: auto;
+}
+
+.wpgmza_map_wrapper .wpgmza_map.wpgmza-auto-center,
+.wpgmza_map_wrapper .wpgmza_map.wpgmza-auto-right{
+    margin-left: auto;
+}
+
+/* Common Styling issue solver */
+.wpgmza_map {
+    border:0;
+    max-width:100% !important;
+}
+
+.wpgmza_map[data-maps-engine="open-layers"]{
+    overflow: hidden;
+    cursor: grab;
+}
+
+.wpgmza_map .ol-marker {
+    cursor: pointer;
+}
+
+.wpgmza_map img { 
+	max-width:none; 
+} 
+
+.wpgmza_map .gm-svpc img {
+    max-width: initial;
+}
+
+.wpgmza_map img:not(button>img){
+    border: none !important;
+    background-color:transparent !important;
+    box-shadow: none !important;
+}
+
+.wpgmza_map img[src$="api-3/images/google4.png"],
+.wpgmza_map img[src$='api-3/images/google_white5.png'] {
+	box-shadow: none !important;
+}
+
+.wpgmza_table img {
+    box-shadow: none !important;    
+}
+
+.wpgmza_map .ol-info-window-plain {
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    width: 280px;
+    max-width: 648px;
+    overflow-y: auto;
+
+    font-weight: 500; 
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.wpgmza_map .ol-info-window-plain .ol-infowindow-close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.7;
+
+    transition: opacity 0.4s ease;
+}
+
+.wpgmza_map .ol-info-window-plain .ol-infowindow-close:before,
+.wpgmza_map .ol-info-window-plain .ol-infowindow-close:after {
+    display: block;
+    content: "";
+    height: 80%;
+    width: 2px;
+    background: #b3b1b1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -40%) rotate(-45deg);
+}
+
+.wpgmza_map .ol-info-window-plain .ol-infowindow-close:after {
+    transform: translate(-50%, -40%) rotate(45deg);
+}
+
+.wpgmza_map .ol-info-window-plain .ol-infowindow-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.wpgmza_map *:focus {
+    outline: none;
+}

@@ -1,0 +1,14 @@
+.wpgmza_map_wrapper.proxied{
+    display: flex;
+    flex-direction: row;
+}
+
+.wpgmza_map_wrapper.proxied .wpgmza-proxied-center,
+.wpgmza_map_wrapper.proxied .wpgmza-proxied-left{
+    margin-right: auto;
+}
+
+.wpgmza_map_wrapper.proxied .wpgmza-proxied-center,
+.wpgmza_map_wrapper.proxied .wpgmza-proxied-right{
+    margin-left: auto;
+}

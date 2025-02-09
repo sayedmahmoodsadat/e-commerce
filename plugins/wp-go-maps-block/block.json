@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "wpgmza-standalone/map-block",
+    "title": "Map Block",
+    "category": "embed",
+    "icon": "location",
+    "description": "The easiest-to-use Google Maps plugin is now available as a standalone block! Create custom Google or OpenLayers maps with high-quality markers, and easily add your map to WordPress posts or pages.",
+    "keywords": [ "Map", "Maps", "Google", "Google Map", "Open Layers" ],
+    "version": "1.0.0",
+    "textdomain": "wp-go-maps-block",
+    "editorScript": ["wpgmza-standalone-map-block", "wpgmza_block_ol_api_call"],
+    "editorStyle": ["wpgmza-standalone-map-block", "wpgmza_block_ol_api_call"]
+}

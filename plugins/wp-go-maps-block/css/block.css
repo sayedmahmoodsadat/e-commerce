@@ -1,0 +1,200 @@
+.wpgmza-standalone-block-module {
+	background: #F3F3F4;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    width: 100%;
+}
+
+.wpgmza-standalone-block-preview-wrapper {
+    position: relative;
+    align-self: center;
+}
+
+.wpgmza-standalone-block-preview-wrapper.wpgmza-standalone-block-align-left {
+    align-self: flex-start;
+}
+
+.wpgmza-standalone-block-preview-wrapper.wpgmza-standalone-block-align-right {
+    align-self: flex-end;
+}
+
+.wpgmza-standalone-block-preview-map {
+    width: 100%;
+    height: 100%;
+}
+
+.wpgmza-standalone-block-module .dashicon {
+    font-size: 1.4rem;
+}
+
+.wpgmza-standalone-block-module .wpgmza-standalone-block-title{
+	font-size: 0.9rem;
+	color: #333;
+}
+
+span.wpgmza-standalone-block-preview-note {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75rem;
+    padding: 2px 7px;
+    background: #ffffffa1;
+    border-bottom-left-radius: 3px;
+}
+
+.wpgmza-standalone-block-inspector-search-info {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-size: 0.9em;
+    top: -5px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode .wpgmza-standalone-block-inspector-search-location {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode .wpgmza-standalone-block-inspector-search-location:last-child {
+    border-bottom: none;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode .wpgmza-standalone-block-inspector-search-location:hover{
+    cursor: pointer;
+    background: #eee;
+    opacity: 1;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode .wpgmza-standalone-block-inspector-search-location .wpgmza-standalone-block-inspector-search-location-address {
+    font-size: 1.1em;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode .wpgmza-standalone-block-inspector-search-location .wpgmza-standalone-block-inspector-search-location-type {
+    text-transform: capitalize;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.wpgmza-standalone-block-inspector-search-info.list-mode .wpgmza-standalone-block-inspector-search-info-label {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    background: #f6f6f6;
+}
+
+.wpgmza-standalone-block-inspector-search-info-close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.7;
+
+    transition: opacity 0.4s ease;
+}
+
+.wpgmza-standalone-block-inspector-search-info-close:before,
+.wpgmza-standalone-block-inspector-search-info-close:after {
+    display: block;
+    content: "";
+    height: 80%;
+    width: 2px;
+    background: #b3b1b1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -40%) rotate(-45deg);
+}
+
+.wpgmza-standalone-block-inspector-search-info-close:after {
+    transform: translate(-50%, -40%) rotate(45deg);
+    
+}
+
+.wpgmza-standalone-block-inspector-search-info-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.wpgmza-standalone-block-inspector-tip {
+    margin-bottom:  1rem;
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+.wpgmza-standalone-block-full-feature-block {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 1rem);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    border: 2px solid #cc9999;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 2px 2px #00000012;
+}
+
+.wpgmza-standalone-block-full-feature-block .wpgmza-standalone-block-full-feature-block-blinky{
+    max-width: 64px;
+}
+
+.wpgmza-standalone-block-full-feature-block .wpgmza-standalone-block-full-feature-block-inner{
+    display: flex; 
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.wpgmza-standalone-block-full-feature-block .wpgmza-standalone-block-full-feature-block-title{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+    
+.wpgmza-standalone-block-full-feature-block .button {
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+
+ul.wpgmza-standalone-block-inspector-feature-list {
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.wpgmza-standalone-block-inspector-managed-block > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.wpgmza-standalone-block-inspector-managed-block > div .button{
+    width: fit-content;
+}
+
+.wpgmza-standalone-block-full-feature-manage-notice {
+    font-size: 0.9em;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem;
+}
