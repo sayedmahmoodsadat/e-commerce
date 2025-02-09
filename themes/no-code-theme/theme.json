@@ -184,11 +184,11 @@
 	"templateParts":[ 
 		{
 		"header": {
-			"title": "Site Header",
+			"title": "Header",
 			"area": "header"
 		},
 		"footer": {
-			"title": "Site Footer",
+			"title": "Footer",
 			"area": "footer"
 		}
 	}
