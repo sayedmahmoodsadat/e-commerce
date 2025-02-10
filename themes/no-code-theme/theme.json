@@ -134,8 +134,8 @@
 					"fontSize": "16px"
 				},
 				"color": {
-					"text": "var(--wp--preset--color--contrast)",
-					"background": "var(--wp--preset--color--base)"
+					"text": "var(--wp--preset--color--base)",
+					"background": "var(--wp--preset--color--contrast)"
 				}
 			},
 			"core/preformatted": {
@@ -182,15 +182,15 @@
 	},
 
 	"templateParts":[ 
-		{
-		"header": {
-			"title": "Header",
-			"area": "header"
-		},
-		"footer": {
-			"title": "Footer",
-			"area": "footer"
-		}
-	}
+			{
+				"area": "header",
+				"name": "header",
+				"title": "Header"
+			},
+			{
+				"area": "footer",
+				"name": "footer",
+				"title": "Footer"
+			}
 	]
 }
