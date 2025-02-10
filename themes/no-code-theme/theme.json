@@ -38,6 +38,11 @@
 					"name": "Blue"
 				},
 				{
+					"slug": "green",
+					"color": "#00FF00",
+					"name": "Green"
+				},
+				{
 					"slug": "transparent",
 					"color": "transparent",
 					"name": "Transparent"
