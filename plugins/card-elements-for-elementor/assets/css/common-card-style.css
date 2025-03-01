@@ -1,0 +1,12 @@
+/*-----------| Common Card CSS |--------------*/
+
+.text-center {
+    text-align: center;
+}
+a .fa-whatsapp {
+    font-size: 40px;
+    color: #3FA34A;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
