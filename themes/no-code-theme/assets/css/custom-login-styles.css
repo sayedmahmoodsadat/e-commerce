@@ -1,0 +1,104 @@
+.woocommerce-form-login {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the form */
+}
+
+/* Style input fields */
+.woocommerce-form-login .woocommerce-Input--text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+/* Style the labels */
+.woocommerce-form-login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style the "Remember Me" checkbox */
+.woocommerce-form-login .woocommerce-form__label-for-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.woocommerce-form-login .woocommerce-form__input-checkbox {
+    margin-right: 10px;
+}
+
+/* Style the "Lost Password" link */
+.woocommerce-form-login .lost_password {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.woocommerce-form-login .lost_password a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.woocommerce-form-login .lost_password a:hover {
+    text-decoration: underline;
+}
+
+/* Style the submit button */
+.woocommerce-form-login .woocommerce-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.woocommerce-form-login .woocommerce-button:hover {
+    background-color: #005177;
+}
+
+.woocommerce-account .woocommerce,
+.woocommerce-account .entry-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Optional: Centers vertically as well */
+}
+
+.woocommerce-notices-wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+.woocommerce-notices-wrapper .woocommerce-message,
+.woocommerce-notices-wrapper .woocommerce-error,
+.woocommerce-notices-wrapper .woocommerce-info {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: left;
+}
+body.woocommerce-account h2 {
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -500px;
+    /* margin-left: -200px; */
+    color: #333;
+}
+

@@ -1,0 +1,168 @@
+body .wc-block-checkout {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: -70px auto 0; 
+    padding: 20px;
+    justify-content: center; 
+}
+
+/* Form Container (Right Side) */
+body .wc-block-checkout__main {
+    flex: 1;
+    margin-top: -20px; /* Move the form container up */
+    max-width: 800px; 
+}
+
+/* Sidebar Container (Left Side) */
+body .wc-block-components-sidebar {
+    flex: 0 0 400px; /* Fixed width for sidebar */
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -10px; /* Move the sidebar container up */
+}
+
+/* General Styles for Checkout Steps */
+body .wc-block-components-checkout-step {
+    background: red;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+body .wc-block-components-checkout-step:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Checkout Step Title */
+body .wc-block-components-checkout-step__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Checkout Step Description */
+body .wc-block-components-checkout-step__description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Checkout Step Content */
+body .wc-block-components-checkout-step__content {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Shipping Fields */
+body .wc-block-checkout__shipping-fields {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Shipping Options */
+body .wc-block-checkout__shipping-option {
+    margin-bottom: 20px;
+}
+
+/* Payment Methods */
+body .wc-block-checkout__payment-method {
+    margin-bottom: 20px;
+}
+
+/* Order Notes */
+body .wc-block-checkout__order-notes {
+    margin-bottom: 20px;
+}
+
+/* Terms and Conditions */
+body .wc-block-checkout__terms {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+body .wc-block-checkout__terms--with-separator {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+/* Checkout Actions (Place Order Button) */
+body .wc-block-checkout__actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+body .wc-block-checkout__actions .wc-block-components-button {
+    background-color: #0073e6;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+body .wc-block-checkout__actions .wc-block-components-button:hover {
+    background-color: #005bb5;
+}
+
+/* Order Summary Items */
+body .wc-block-components-sidebar .wc-block-components-totals-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+body .wc-block-components-sidebar .wc-block-components-totals-item__label {
+    font-weight: 600;
+}
+
+body .wc-block-components-sidebar .wc-block-components-totals-item__value {
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack form and sidebar on small screens */
+    body .wc-block-checkout {
+        flex-direction: column; /* Stack vertically on small screens */
+    }
+
+    /* Full width for sidebar on small screens */
+    body .wc-block-components-sidebar {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    /* Center-align actions on small screens */
+    body .wc-block-checkout__actions {
+        text-align: center;
+    }
+}
+
+/* Add stars to required field labels */
+body .wc-block-checkout__shipping-fields .wc-block-components-text-input label:after,
+body .wc-block-checkout__shipping-fields .wc-block-components-select label:after,
+body .wc-block-checkout__shipping-fields .wc-block-components-checkbox label:after {
+    content: " *"; /* Add a star after the label */
+    color: red; /* Make the star red */
+    font-size: 1.2rem; /* Adjust star size */
+    vertical-align: top; /* Align star properly */
+}
+
