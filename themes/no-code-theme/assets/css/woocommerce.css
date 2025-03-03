@@ -318,13 +318,3 @@ body .wc-block-components-sidebar .wc-block-components-totals-item__value {
   font-weight: 400;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  body .wc-block-checkout__actions {
-      text-align: center;
-  }
-
-  body .wc-block-components-sidebar {
-      margin-top: 20px;
-  }
-}

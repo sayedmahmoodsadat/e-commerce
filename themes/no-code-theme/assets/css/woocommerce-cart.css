@@ -1,25 +1,23 @@
-/* Cart Items Container */
 body .wc-block-cart-items__row {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #eee;
     transition: background-color 0.3s ease;
-    gap: 30px; /* Increase spacing between items */
+    gap: 30px; 
 }
 
 body .wc-block-cart-items__row:hover {
     background-color: #f9f9f9;
 }
 
-/* Cart Item Image (Larger Size) */
 body .wc-block-cart-item__image img {
-    width: 110px; /* Larger image size */
-    height: 150px; /* Larger image size */
+    width: 110px;
+    height: 150px;
     border-radius: 10px;
-    object-fit: cover; /* Ensure images are cropped properly */
+    object-fit: cover; 
 }
 
-/* Cart Item Product Details */
+
 body .wc-block-cart-item__product {
     flex: 1;
     display: flex;
@@ -71,8 +69,8 @@ body .wc-block-cart-item__quantity .wc-block-components-quantity-selector:focus 
 }
 
 body .wc-block-cart-item__remove-link {
-    color: #fff !important; /* Ensure text color is white */
-    background-color: #ff4d4d !important; /* Red background color */
+    color: #fff !important; 
+    background-color: #ff4d4d !important;
     font-size: 2rem;
     font-weight: bold;
     padding: 10px 15px;
@@ -98,7 +96,7 @@ body .wc-block-cart-item__remove-link:active {
 body .wc-block-cart-item__remove-link svg {
     width: 16px;
     height: 16px;
-    fill: #fff; /* Ensure icon color is white */
+    fill: #fff; 
 }
 
 body .wc-block-cart-item__quantity .wc-block-components-quantity-selector {
