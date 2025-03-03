@@ -70,7 +70,7 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_checkout_styles');
 
 
 function enqueue_custom_myaccount_styles() {
-    if (function_exists('is_account_page') && is_account_page()) {
+    if (function_exists('contact-form') && is_account_page()) {
         wp_enqueue_style(
             'custom-woocommerce-myaccount',
             get_template_directory_uri() . '/assets/css/woocommerce-myaccount.css', // Path to your CSS file
@@ -80,3 +80,4 @@ function enqueue_custom_myaccount_styles() {
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_myaccount_styles');
+
