@@ -210,3 +210,24 @@ html {
     color: #333; 
     margin: 0; 
 }
+
+/* WooCommerce Error Banner */
+.wc-block-components-notice-banner.is-error {
+    background: #ffebeb;
+    color: #d9534f;
+    padding: 12px;
+    border-left: 5px solid #d9534f;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 10; 
+    
+}
+
+/* Fix Overlapping Issue */
+.woocommerce-form-register {
+    position: relative;
+    z-index: 1;
+}
