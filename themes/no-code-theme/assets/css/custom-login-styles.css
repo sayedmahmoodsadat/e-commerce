@@ -1,8 +1,9 @@
 .woocommerce-form-login {
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 30px;
+    position: relative;
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -81,7 +82,8 @@
 
 .woocommerce-notices-wrapper {
     text-align: center;
-    width: 80%;
+    width: 100%;
+    margin-left: 10%;
     max-width: 3px;
 }
 
@@ -96,8 +98,74 @@
 body.woocommerce-account h2 {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: -500px;
-    /* margin-left: -200px; */
     color: #333;
 }
 
+.woocommerce-Button .woocommerce-button button, 
+.wp-element-button .woocommerce-form-register__submit {
+    color: #0073aa;
+}
+
+
+
+/* WooCommerce Registration Form Styling */
+.woocommerce-form-register {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Style Form Fields */
+.woocommerce-form-register input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Focus Effect on Input Fields */
+.woocommerce-form-register input:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.3);
+}
+
+/* Register Button */
+.woocommerce-form-register button {
+    background: #0073aa;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.woocommerce-form-register button:hover {
+    background: #005580;
+}
+
+/* Adjust Labels */
+.woocommerce-form-register label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .woocommerce-form-register {
+        padding: 20px;
+    }
+}
+
+
+.woocommerce-privacy-policy-text {
+    width: 105%;
+}

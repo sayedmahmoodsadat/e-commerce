@@ -1,0 +1,91 @@
+/* Heading Style */
+.wp-block-heading {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #333;
+    margin: 30px 0 10px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Paragraph Style */
+.entry-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin: 0 auto 30px;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    transition: color 0.3s ease;
+}
+
+/* List Style */
+.wp-block-list {
+    margin: 0 auto 30px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* List Item Style */
+.wp-block-list li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Custom Bullet Style */
+.wp-block-list li::before {
+    content: '•';
+    color: #0073e6;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wp-block-heading {
+        font-size: 2rem;
+    }
+
+    .entry-content p {
+        font-size: 1rem;
+        width: 90%;
+        text-align: left;
+    }
+
+    .wp-block-list li {
+        font-size: 1rem;
+    }
+}
