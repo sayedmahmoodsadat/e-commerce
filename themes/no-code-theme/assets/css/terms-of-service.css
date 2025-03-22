@@ -63,7 +63,7 @@
     }
 }
 
-/* Optional: Make paragraph text left-aligned if more natural for longer text */
+/* Make paragraph text left-aligned if more natural for longer text */
 .entry-content p.long-text {
     text-align: left;
     width: 100%;

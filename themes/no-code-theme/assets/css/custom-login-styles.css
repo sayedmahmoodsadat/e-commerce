@@ -1,7 +1,6 @@
 .woocommerce-form-login {
     max-width: 600px;
     width: 100%;
-    /* margin: 0 auto; */
     padding: 30px;
     position: relative;
     background: #ffffff;
@@ -157,14 +156,6 @@ body.woocommerce-account h2 {
     margin-bottom: 5px;
     display: block;
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .woocommerce-form-register {
-        padding: 20px;
-    }
-}
-
 
 .woocommerce-privacy-policy-text {
     width: 105%;
