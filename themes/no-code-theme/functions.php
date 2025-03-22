@@ -16,9 +16,7 @@ require_once get_theme_file_path( 'inc/hooks.php' );
 
 
 function custom_enqueue_woocommerce_styles() {
-    // Check if we are on a WooCommerce page
     if ( is_woocommerce() ) {
-        // Enqueue your custom CSS file for WooCommerce pages
         wp_enqueue_style( 'custom-woocommerce-style', get_template_directory_uri() . '/assets/css/woocommerce.css' );
     }
 }
@@ -55,14 +53,12 @@ function enqueue_custom_cart_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_custom_cart_styles');
 
 function enqueue_custom_checkout_styles() {
-    // Check if it's the checkout page
     if (function_exists('is_checkout') && is_checkout()) {
-        // Enqueue the custom CSS file
         wp_enqueue_style(
-            'custom-woocommerce-checkout', // Handle
-            get_template_directory_uri() . '/assets/css/woocommerce-checkout.css', // Path to CSS file
-            array(), // Dependencies
-            filemtime(get_template_directory() . '/assets/css/woocommerce-checkout.css') // Version (based on file modification time)
+            'custom-woocommerce-checkout', 
+            get_template_directory_uri() . '/assets/css/woocommerce-checkout.css', 
+            array(),
+            filemtime(get_template_directory() . '/assets/css/woocommerce-checkout.css') 
         );
     }
 }
@@ -70,14 +66,27 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_checkout_styles');
 
 
 function enqueue_custom_myaccount_styles() {
-    if (function_exists('contact-form') && is_account_page()) {
+    if (function_exists('is_account_page') && is_account_page()) {
         wp_enqueue_style(
             'custom-woocommerce-myaccount',
-            get_template_directory_uri() . '/assets/css/woocommerce-myaccount.css', // Path to your CSS file
+            get_template_directory_uri() . '/assets/css/woocommerce-myaccount.css', 
             array(),
-            filemtime(get_template_directory() . '/assets/css/woocommerce-myaccount.css') // Version based on file modification time
+            filemtime(get_template_directory() . '/assets/css/woocommerce-myaccount.css')
         );
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_myaccount_styles');
 
+function custom_privacy_policy_styles() {
+    if (is_page('privacy-policy')) { 
+        wp_enqueue_style('privacy-policy-style', get_template_directory_uri() . '/assets/css/privacy-policy.css');
+    }
+}
+add_action('wp_enqueue_scripts', 'custom_privacy_policy_styles');
+
+function custom_terms_of_service_styles() {
+    if (is_page('refund_returns')) { 
+        wp_enqueue_style('terms-of-service-style', get_template_directory_uri() . '/assets/css/terms-of-service.css');
+    }
+}
+add_action('wp_enqueue_scripts', 'custom_terms_of_service_styles');
