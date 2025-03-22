@@ -165,3 +165,12 @@ Generated on fullsiteediting.com. No code version.
     /* background: rgba(255, 255, 255, 0.9); */
 }
 
+/* Example hover effect */
+.wp-elements-f174e2343df36d153b48c33046253b26 a:where(:not(.wp-element-button)):hover {
+    color: white; 
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    text-decoration: underline; 
+    transition: all 0.3s ease;  
+}
+
+
