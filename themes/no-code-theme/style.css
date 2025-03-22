@@ -162,15 +162,234 @@ Generated on fullsiteediting.com. No code version.
 .inner-blocks p:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    /* background: rgba(255, 255, 255, 0.9); */
 }
 
 /* Example hover effect */
 .wp-elements-f174e2343df36d153b48c33046253b26 a:where(:not(.wp-element-button)):hover {
     color: white; 
-    background: linear-gradient(135deg, #007bff, #00d4ff);
+    background-color: #333333;  
     text-decoration: underline; 
     transition: all 0.3s ease;  
 }
 
+/* Container for the query block */
+.wp-block-query {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Post Template Block */
+.wp-block-post-template {
+    background-color: #f4f4f4; 
+    color: #333;
+    padding: 30px;
+    width: 90%;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in effect when the block is loaded */
+}
+
+/* Individual Post Block */
+.wp-block-post {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px); 
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards; /* Animation when the post is loaded */
+    animation-delay: 0.2s; /* Delay to create staggered effect between posts */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition for smooth hover effects */
+}
+
+/* Post Title */
+.wp-block-post h2.post-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Post Thumbnail */
+.wp-block-post .post-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Post Excerpt */
+.wp-block-post .post-excerpt {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    transition: color 0.3s ease; 
+}
+
+/* Hover effect for the post block */
+.wp-block-post:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    background-color: #f9f9f9;  
+}
+
+/* Hover effect for the post title */
+.wp-block-post:hover h2.post-title {
+    color: #0073aa; 
+}
+
+/* Hover effect for the post thumbnail */
+.wp-block-post .post-thumbnail:hover {
+    transform: scale(1.05); 
+}
+
+/* Hover effect for the post excerpt */
+.wp-block-post:hover .post-excerpt {
+    color: #333; 
+}
+
+/* Animation for fade-in on post template */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for slide-up effect on posts */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Styling for the post template */
+.wp-block-post-template.has-background {
+    background-color: #fafafa; /* Set background color */
+}
+
+.wp-block-post-template.has-primary-background-color {
+    background-color: #0073aa; /* Example primary color */
+    color: white;
+}
+
+/* Styling for the Read More button */
+.wp-block-read-more {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #007bff, #00d4ff); /* Gradient background */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transition for background and transform */
+    margin-top: 15px; /* Space above the button */
+    box-sizing: border-box;
+}
+
+/* Hover effects for the Read More button */
+.wp-block-read-more:hover {
+    background: linear-gradient(135deg, #00d4ff, #007bff); /* Inverted gradient on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    color: #ffffff; /* Keeps text color white on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for 3D effect */
+}
+
+/* Active state (click effect) */
+.wp-block-read-more:active {
+    transform: translateY(1px); /* Simulate pressing the button */
+    box-shadow: none; /* Removes shadow when clicked */
+}
+
+/* Animation for Read More button appearance */
+.wp-block-read-more {
+    opacity: 0;
+    animation: fadeInButton 0.6s forwards;
+    animation-delay: 0.5s; /* Slight delay to make the button appear after the post is loaded */
+}
+
+/* Fade-in effect for the Read More button */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design: Center the button and adjust size on small screens */
+@media (max-width: 768px) {
+    .wp-block-read-more {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin-top: 10px; /* Adjust spacing on small screens */
+    }
+}
+
+/* Styling for the wp-block-columns container */
+.wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen (from the left) */
+    animation: slideIn 1s ease-out forwards; /* Apply slide-in animation */
+}
+
+/* Animation for sliding in */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Start from off-screen (left) */
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(20px); /* Move a little to the right (before reaching its final position) */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Final position (aligned on screen) */
+    }
+}
+
+/* Optional: Add a delay to the sliding effect if you want the columns to stagger their entry */
+.wp-block-columns:nth-child(1) {
+    animation-delay: 0.2s; /* Delay for the first column */
+}
+
+.wp-block-columns:nth-child(2) {
+    animation-delay: 0.4s; /* Delay for the second column */
+}
+
+.wp-block-columns:nth-child(3) {
+    animation-delay: 0.6s; /* Delay for the third column */
+}
+
+/* Responsive Design: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .wp-block-columns {
+        flex-direction: column; /* Stack the columns vertically on smaller screens */
+        gap: 15px; /* Adjust spacing between stacked columns */
+    }
+}
 
