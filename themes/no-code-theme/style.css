@@ -627,14 +627,6 @@ html {
         margin-left: auto;  
     }
 
-  
-
-
-    /* .wp-block-columns-is-layout-flex {
-        width: 400px;
-        margin-left: -90px;
-    } */
-
     .wp-block-heading {
         padding: 20px;
         margin-right: -20px;
@@ -880,6 +872,70 @@ body.woocommerce-order-received {
 .wp-block-woocommerce-order-confirmation-summary .button:hover {
     background-color: #41b1e4;
 }
+
+/* ! Form Design */
+
+/* === General column styling: Adds padding, rounded corners, and a subtle shadow === */
+.wp-block-column form {
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* === Hover effect: Enhances the shadow and slightly lifts the column === */
+.wp-block-column form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* === Primary background color: Uses the WordPress theme's primary color and ensures white text === */
+.wp-block-column.has-primary-background-color {
+    background-color: var(--wp--preset--color--primary, #0073aa); /* Default WordPress primary blue */
+    color: #fff;
+}
+
+/* === Base text color: Applies  the WordPress theme's default base color === */
+.wp-block-column.has-base-color form {
+    color: var(--wp--preset--color--base, #333);
+}
+
+/* === Custom text color: Allows theme-based text color adjustments === */
+.wp-block-column.has-text-color form {
+    color: var(--wp--preset--color--text, #444);
+}
+
+/* === Link styling: Uses WordPress theme’s link color and adds subtle styling === */
+.wp-block-column.has-link-color a form {
+    color: var(--wp--preset--color--link, #0073aa);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* === Link hover effect: Adds an underline when hovering over links === */
+.wp-block-column.has-link-color  a:hover form {
+    text-decoration: underline;
+}
+
+/* === Layout constraint: Limits the column width and centers it for a clean layout === */
+.wp-block-column.is-layout-constrained form{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* === General announcement post styling === */
+.wp-elements-9de135a858401180ad8ff3286c002b64  {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
